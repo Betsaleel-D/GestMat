@@ -12,7 +12,7 @@
 
 
 		<header id="contHeader">
-			<?php include("entete.php");?>
+			<?php include("contenu/entete.php");?>
 		</header>
 		
 		
@@ -38,11 +38,11 @@
 			</p>
 		</section>
 
-		<?php include("description.php"); ?>
+		<?php include("contenu/description.php"); ?>
 	</div>
 	
 	<header class="pied">
-		<?php include("pied.php");?>
+		<?php include("contenu/pied.php");?>
 	</header>
 </div>
 </body>

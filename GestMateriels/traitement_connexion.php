@@ -46,6 +46,7 @@ session_start();
                     $_SESSION['Auth'] = Array(
                         'pass' => $resultat['pass'],
                         'nom' => $resultat["nom"],
+                        'prenom' => $resultat["prenom"],
                         'email' => $resultat["email"],
                         'id_service_empl' => $resultat['id_service_empl']
                     );

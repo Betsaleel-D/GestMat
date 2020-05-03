@@ -1,16 +1,14 @@
 body
 {
-    background-color:rgb(209, 216, 245);
+    background-color:rgb(227, 231, 245);
     font-family: 'Trebuchet MS', Arial, sans-serif;
     color: #181818;
 }
 
-
   /***Entete****/
-
   #entete{
     display: flex;
-    background-color: rgb(245, 241, 241);
+    background-color: rgb(236, 234, 234);
     justify-content: center;
   }
   .image{
@@ -20,14 +18,11 @@ body
 }
 .MessageColor{
   background-color: #ffa600;
-  
   color: blue;
   margin: 15px;
   padding: 2px;
   width: 100px;
 }
-
-
 
 nav ul
 {
@@ -119,7 +114,7 @@ nav a:hover
     margin-left: 30%;
   }
 
-  .texte_centrer {
+  .texte_centrer_ban {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -129,8 +124,7 @@ nav a:hover
     text-align: center;
     transform: translate(-50%, -390%); 
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px 0px #ff9900;
-   
+    text-shadow: 1px 1px 1px 0px #ff9900; 
   }
 
     .woumiah_logo{
@@ -150,6 +144,7 @@ nav a:hover
     width: 1300px;
     margin: auto;
     background-color:#fffefc;
+    height: auto;
   
    /** border: 1px solid deeppink;**/
 }
@@ -190,7 +185,7 @@ nav a:hover
         margin-left: 140px;
         text-decoration: none;
         color: rgb(255, 255, 255);
-        text-shadow: 2px 2px #181818;
+       
         box-shadow: 3px 3px 1px rgb(53, 50, 50);
         border-radius: 10px; 
       }
@@ -201,6 +196,7 @@ nav a:hover
   #corps{
         display: flex;
       }
+     
     
 
       .imgDesc {
@@ -219,9 +215,19 @@ nav a:hover
       }
       #Id_article{
         width: 700px;
-        margin-top: 50px;
-       
+        margin-top: 50px; 
       }
+
+     #Id_article_cmpt2{
+       display: flex;
+       margin: 20px;
+      
+     }
+
+    .verif_ajout_m{
+      margin:  20px;
+      text-align: center;
+    }
       .image2{
         width: 600px;
         height: 400px;
@@ -232,24 +238,18 @@ nav a:hover
 
     .copy{
       text-align: center;
-      color: rgb(165, 161, 165);
-      margin-bottom: 10px;
+      color: rgb(221, 214, 221);
+      
+      padding: 20px;
     }
 
     #pied {
-
        background-color: rgb(26, 27, 27);
-       color: rgb(253, 114, 0);
-       height: 200px;
       
     }
-
-    .nav_pied{
-      list-style-type: none;
-      
-      display: inline-flex;
-      margin-right: 700px;
-  }
+    .sommaire a{
+      color: rgb(221, 214, 221);
+    }
   /**********compte**************/
   .compte{
     width: 700px;
@@ -283,6 +283,10 @@ nav a:hover
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px black;
   }
+  .table_messagerie{
+    margin: 2000px;
+    width: 700px;
+  }
 
  
 
@@ -306,12 +310,10 @@ nav a:hover
    
     font-weight: bold;
   }
-  .table_msg{
-    background-color: rgba(238, 198, 169, 0.979);
-  }
+
   .table_cmd{
-    height: 300px;
-    margin-left: 10px;
+    margin-top: 30px;
+    max-height: 300px;
     overflow: auto;
   }
   #table_cmd{
@@ -319,37 +321,203 @@ nav a:hover
     overflow:auto; 
   }
 
+  .table_cmd_empl{
+    height: 300px;
+    overflow:auto; 
+    margin-right: 30px;
+  }
+
   .btn_verif{
     background-color: rgb(65, 65, 207);
   }
 
+  .ajout_m{
+    margin-left: 65px;
+    width: 50%;
+  }
+  .veri{
+    margin-left: 80px;
+  }
+/*
   .form_verif{
     margin-right: 10px;
     margin-top: 10px;
     width: 500px;
   }
+  */
 .titre_tb_mcd{
   text-align: center;
 }
 
-.form_email_gest{
-  
+.form_email_gest{ 
  margin-top: -3px;
-  display: inline-block;
+display: inline-block;
 }
-
+.form_email_empl{ 
+  margin-top: -3px;
+   display: inline-block;
+   margin-bottom: 20px;
+ }
+/*
 .fieldset_verif{
   width: auto;
   margin-top: 15px;
 }
+*/
+.verification{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.modif_m{
+  display: flex;
+  margin-left: 20px;
+}
+
+.taill_radio{
+  width:  70px;
+  height: 15px;
+}
+
+.larg_bouton{
+ width: 200px;
+text-align: center;
+ display: flex;
+ float: left;
+ margin-left: 70px;
+}
+
+#table_envoye{
+margin-bottom: 30px;
+padding-left: 40px;
+max-height: 300px;
+overflow: auto;
+width: 100px;
+}
+#table_envoye1{
+  margin-bottom: 30px;
+  padding-left: 40px;
+  max-height: 300px;
+  overflow: auto;
+  }
+
+#table_reçu{
+padding-left: 40px;
+max-height: 300px;
+overflow: auto;
+
+}
 
 
+#table_messagerie{
+  margin-bottom: 30px;
+  padding-left: 40px;
+  max-height: 300px;
+  overflow: auto;
+  }
+/*
+#tables_envoie_reçu{
+  display: flex;
+  margin: 15px;
+}
+*/
 
+.table_envoye{
+  width: 1200px;
+}
+.table_reçu{
+  width: 1200px;
+}
+
+.l_email{
+  width: 200px;
+}
+.l_message{
+  width: 450px;
+}
+.l_titre{
+  width: 250px
+}
+.titre_table{
+  background-color: rgb(84, 84, 199);
+}
+.l_messagerie{
+  width: 350px;
+}
+
+.ligne_color{
+  background-color: rgba(255, 140, 0, 0.966);
+}
+#table_cmd_empl{
+  margin-top: 30px;
+  padding-left: 40px;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.sommaire{
+  color: #ffffff;
+  margin-top: 10px;
+  margin-left: 30px;
   
+}
 
-    
-    
+/**Les media query*/
 
+@media all and (max-width: 1028px){
+	#page_complet
+	{
+  width: auto;
+  text-align: center;
+ 
+  }
+  nav ul
+	{
+  flex-direction: column;
+
+	}
+
+  article{
+    width: auto;
+    text-align: center;
    
-    
-    
+  }
+
+  #corps{ 
+    flex-wrap: wrap;
+  }
+
+  #contHeader{
+    width: auto;
+  }
+
+  #entete{
+    flex-wrap: wrap;
+    width: auto;
+  } 
+  .cont{
+    width: auto;
+  }
+
+  #id_section{
+    width: auto;
+  }
+
+  #Id_article{
+    width: auto; 
+    margin-left: 200px; 
+  }
+
+  .texte_centrer_ban {
+    position: absolute;
+    top: auto;
+    left: auto;
+    font-size: auto;
+    font-weight: auto;
+    font-family: Georgia, serif;
+    text-align: center;
+    transform: translate(30%, -290%); 
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px 0px #ff9900; 
+  }
+}

@@ -41,8 +41,8 @@
 
         if ( $resultat_r_demande['niveau'] != $niveau_val)
         {
-           //echo "Pseudo existant"; 
-                    // Tranformer les information Majuscule
+          
+              
 
                     $stocks_final = $resultat_r_materiel['quantite_stocks'] - $resultat_r_demande['quantite_cmd'] ;
 
@@ -55,12 +55,12 @@
                             'quantite_stocks' => $stocks_final
                         ));
 
-                        // Mise a jour de la table commande
+                 
 
                         $reponse1 = $bdd->prepare('UPDATE demande SET niveau = :niveau WHERE
-                        id_materiel_d = :id_materiel_d');
+                        id_demande = :id_demande');
                             $reponse1 -> execute(array(
-                            'id_materiel_d' => $resultat_r_materiel['id_materiel'],
+                            'id_demande' => $resultat_r_demande['id_demande'],
                             'niveau' => $niveau_val
                 ));
                     }        

@@ -2,12 +2,12 @@
 <HTML>
     <HEAd>
         <TITLe>Connexion</TITLe>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="../style.css">
     </HEAd>
     <body>
     <div id="page_complet">
         <header id="contHeader">
-			<?php include("entete.php");?>
+			<?php include("../contenu/entete.php");?>
         </header>
 
         <section id="id_section">
@@ -33,7 +33,7 @@
 
     </div>
     <header class="pied">
-			<?php include("pied.php");?>
+			<?php include("../contenu/pied.php");?>
         </header>
     </body>
 </HTML>

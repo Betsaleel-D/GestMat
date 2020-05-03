@@ -9,7 +9,7 @@
 
         
         <header id="contHeader">
-			<?php include("entete.php");?>
+			<?php include("../contenu/entete.php");?>
         </header>
 
 
@@ -58,13 +58,14 @@
         </form>
         </section>
 
-        <?php include("description.php"); ?>
-        </div>
+        <?php include("../contenu/description.php"); ?>
+    
         
 
     </div>
          <header class="pied">
-			<?php include("pied.php");?>
+			<?php include("../contenu/pied.php");?>
         </header>
+    </div>
     </body>
 </HTML>

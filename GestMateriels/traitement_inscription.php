@@ -10,8 +10,6 @@
 ?>
 
 <?php
-    
-
     if(isset($_POST['nom']) AND isset($_POST['prenom']) AND isset($_POST['servic']) AND isset($_POST['email']) AND isset($_POST['pass']) AND isset($_POST['pass2']))
     {
         echo "entre ";
@@ -32,11 +30,9 @@
 
         if ($_POST['email'] != $resultat_empleye['email'])
         {
-           
+           //verification de la conformité de l'email
             if (preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['email']))
             {
-             //echo "Pseudo existant"; 
-        
                 if($_POST['pass'] == $_POST['pass2'])
                 {
                      echo " et insertion";   

@@ -44,23 +44,23 @@ session_start();
 
 */
         
-$date=date("Y.m.d.H:i:s");
-//echo $date;
-$niveau = "En cours";
-    $reponse = $bdd->prepare('INSERT INTO demande (id_materiel_d, id_employe_d, 
-    quantite_cmd,commentaire ,date_cmd, niveau) VALUES(:id_materiel_d, :id_employe_d, :quantite, :commentaire, 
-    :date_cmd, :niveau)');
-    $reponse -> execute(array(
-    'id_materiel_d' => $resultat_materiel['id_materiel'],
-    'id_employe_d' => $resultat_empleye["id_employe"],
-    'quantite' => $_POST['quantite'],
-    'commentaire' => $_POST['commentaire'],
-    'date_cmd' => $date,
-    'niveau' => $niveau
-    ));
-    
-                header("location: compte.php");            
-    }
+            $date=date("Y.m.d.H:i:s");
+            //echo $date;
+            $niveau = "En cours";
+                $reponse = $bdd->prepare('INSERT INTO demande (id_materiel_d, id_employe_d, 
+                quantite_cmd,commentaire ,date_cmd, niveau) VALUES(:id_materiel_d, :id_employe_d, :quantite, :commentaire, 
+                :date_cmd, :niveau)');
+                $reponse -> execute(array(
+                'id_materiel_d' => $resultat_materiel['id_materiel'],
+                'id_employe_d' => $resultat_empleye["id_employe"],
+                'quantite' => $_POST['quantite'],
+                'commentaire' => $_POST['commentaire'],
+                'date_cmd' => $date,
+                'niveau' => $niveau
+                ));
+                
+                            header("location: compte.php");            
+                }
    
     
 ?>
